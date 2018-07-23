@@ -1,0 +1,66 @@
+.Login-container {
+  height: calc(100vh - 150px);
+  min-height: 300px;
+}
+
+.Login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.Login-form > h1 {
+  text-transform: uppercase;
+  font-size: 16pt;
+  font-weight: 400;
+  color: #4D4D4C;
+}
+
+.Login-form > h1::after {
+  content: '';
+  border-bottom: 2px solid #E47D31;
+  position: relative;
+  display: block;
+  width: 140%;
+  left: -20%;
+  top: 15px;
+}
+
+.Login-formfields-container {
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Login-formfields-container > input {
+  margin-top: 15px;
+  width: 250px;
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+  font-size: 11pt;
+  color: #757575;
+  border: none;
+}
+
+.Login-formfields-container> input::placeholder {
+  font-size: 11pt;
+  font-weight: 400;
+  /* padding-left: 10px; */
+}
+
+.Login-form > button {
+  margin: 40px;
+  height: 40px;
+  width: 150px;
+  background-color: #E47D31;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12pt;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}

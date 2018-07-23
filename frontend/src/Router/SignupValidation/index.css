@@ -1,0 +1,65 @@
+.SignupValidation-container {
+  height: calc(100vh - 130px);
+  min-height: 300px;
+}
+
+.SignupValidation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.SignupValidation-formfields-container {
+  width: 34%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.SignupValidation-formfields-container > input {
+  width: 45%;
+  height: 30px;
+  margin-top: 15px;
+  outline: none;
+  padding-left: 10px;
+  font-size: 11pt;
+  color: #757575;
+  border: none;
+}
+
+.SignupValidation-formfields-container > input::placeholder {
+  font-size: 11pt;
+  font-weight: 600;
+}
+
+.SignupValidation-form > button {
+  margin: 40px;
+  height: 40px;
+  width: 200px;
+  background-color: #E47D31;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 11pt;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.SignupValidation-form > h1 {
+  text-transform: uppercase;
+  font-size: 16pt;
+  font-weight: 400;
+  color: #4D4D4C;
+}
+
+.SignupValidation-form > h1::after {
+  content: '';
+  border-bottom: 2px solid #E47D31;
+  position: relative;
+  display: block;
+  width: 50%;
+  left: 25%;
+  top: 15px;
+}

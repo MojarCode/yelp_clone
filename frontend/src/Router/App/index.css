@@ -1,0 +1,39 @@
+.App-search-container {
+  height: 300px;
+  background-image: url('./front_header.jpg');
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-search-container > input {
+  width: 350px;
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+  font-size: 11pt;
+  color: #757575;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px 0 #ccc;
+}
+
+.App-search-container > input::placeholder {
+  font-size: 11pt;
+  font-weight: 400;
+  /* padding-left: 10px; */
+}
+
+.App-search-container > button {
+  margin: 40px 20px;
+  height: 40px;
+  width: 150px;
+  background-color: #E47D31;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12pt;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}

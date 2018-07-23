@@ -1,0 +1,30 @@
+.SignupMessage-container {
+  height: calc(100vh - 150px);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SignupMessage-container > p{
+  width: 33%;
+  text-align: center;
+  color: #4C4C72;
+  margin-top: 25px;
+}
+
+.SignupMessage-container > h1 {
+  text-transform: uppercase;
+  font-size: 16pt;
+  font-weight: 400;
+  color: #4D4D4C;
+}
+
+.SignupMessage-container > h1::after {
+  content: '';
+  border-bottom: 2px solid #E47D31;
+  position: relative;
+  display: block;
+  width: 50%;
+  left: 25%;
+}

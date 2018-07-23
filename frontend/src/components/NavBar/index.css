@@ -1,0 +1,116 @@
+.NavBar-container {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.NavBar-logo-container {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.NavBar-navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.Navbar-nav {
+  /* width: 60%; */
+}
+
+.Navbar-nav > ul {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+  list-style: none;
+  font-size: 14pt;
+  font-weight: 100;
+}
+
+.Navbar-nav > ul li{
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Navbar-nav > ul li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+
+.Navbar-nav-li-active {
+  color: #4A4A4A;
+  font-weight: 600;
+  border-bottom: 2px solid #E47D31;
+}
+
+.NavBar-auth-container {
+  /* width: 35%; */
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.NavBar-auth-signup, .NavBar-auth-login {
+  width: 90px;
+  height: 35px;
+  background-color: #E47D31;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 11pt;
+  font-weight: 100;
+  outline: none;
+  cursor: pointer;
+}
+
+.NavBar-auth-signup:active, .NavBar-auth-login:active {
+  height: 37px;
+  width: 92px;
+}
+
+.NavBar-auth-signup:active {
+  margin-left: -2px;
+}
+
+.NavBar-auth-signup {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.NavBar-auth-login {
+  margin-left: 1px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.NavBar-auth-logout {
+  width: 90px;
+  height: 35px;
+  background-color: #E47D31;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 11pt;
+  font-weight: 100;
+  outline: none;
+  cursor: pointer;
+  border-radius: 16px;
+}

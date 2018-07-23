@@ -1,0 +1,33 @@
+version: '2'
+services:
+  database:
+    image: postgres:9.6.1
+    restart: always
+    env_file:
+      - dev.env
+    volumes:
+      - database:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  app:
+    image: registry.gitlab.propulsion-home.ch/full-stack/batch-2018-03/group-projects/aquarius:latest
+    restart: always
+    env_file:
+      - dev.env
+    command: "/usr/sbin/sshd -D"
+#    depends_on:
+#      - database
+    ports:
+      - "4001:22"
+      - "4040:8000"
+    volumes:
+      - ./media-files:/media-files
+      - ./static-files:/static-files
+      - ./app:/app
+      - ./database:/database
+      - ./scripts:/scripts
+
+
+volumes:
+  database:
